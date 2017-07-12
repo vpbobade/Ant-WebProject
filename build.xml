@@ -47,7 +47,6 @@
 		<pathelement path="${work.home}"/>
 	</path>
 
-	
 	<target name="war" 
 	          description="Create WAR file for binary distribution">
 		<war destfile="${war.home}/${app.name}.war" webxml="${work.home}/WEB-INF/web.xml">
