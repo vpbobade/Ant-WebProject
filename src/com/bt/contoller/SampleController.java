@@ -20,7 +20,7 @@ public class SampleController {
 			throws JSONException {
 
 		JSONObject js = new JSONObject();
-		js.put("Name", "Gangadhar ");
+		js.put("Name", "ajaydilip ");
 		js.put("Technology", "DevOps ");
 
 		return js.toString();
