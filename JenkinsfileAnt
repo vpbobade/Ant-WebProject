@@ -6,7 +6,7 @@ git 'https://github.com/vpbobade/maven-project.git'
 }
 }
 {
-stage ('Compile Stage') {
+stage ('Performing the lifecycle stages one by one. . .') {
 agent { label 'Slave1'}
 steps {
 withAnt(installation: 'ant_1.9.2', jdk: 'local-java-1.8.0-openjdk_64') {
