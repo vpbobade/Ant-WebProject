@@ -62,9 +62,9 @@
 			<metainf dir="${app.home}" excludes="application.xml"/>
 		</ear>
 		
-		<delete file="${dist.home}/${app.name}.war" /> 
+		<!--delete file="${dist.home}/${app.name}.war" /> 
 		<delete dir="${war.home}" />
-		<delete dir="${work.home}" />
+		<delete dir="${work.home}" /-->
 	</target>
 	
 </project>
