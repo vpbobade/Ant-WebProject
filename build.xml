@@ -1,5 +1,5 @@
 <?xml version="1.0" ?> 
-<project name="AntExample1" default="jar">
+<project name="AntExample1" default="war">
 
 	<path id="compile.classpath">
 		<fileset dir="WebContent/WEB-INF/lib">
@@ -18,12 +18,12 @@
 		</javac>
 	</target>
 	
-	<target name="jar" depends="compile">
-		<jar destfile="dist/AntExample.jar" webxml="WebContent/WEB-INF/web.xml">
+	<target name="war" depends="compile">
+		<jar destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent"/>
 			<lib dir="WebContent/WEB-INF/lib"/>
 			<classes dir="build/classes"/>
-		</jar>
+		</war>
 	</target>
 	
 	<target name="clean">
