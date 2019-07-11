@@ -20,7 +20,7 @@ sh "chmod -R 775 /home/ec2-user/mydir/workspace/pipeline-3/dist/*.war"
 stage ('Compile deploy'){
 steps {  
 sshagent (credentials: ['179ff7b9-dcbf-42ed-8078-d3ae0f333e9a']) {
-sh 'scp -o StrictHostKeyChecking=no */*/*/*.war ec2-user@172.31.91.21:/var/lib/tomcat/webapps'
+sh 'scp -o StrictHostKeyChecking=no */*/*/*.war root@172.31.91.21:/var/lib/tomcat/webapps'
 }
 }
 }
