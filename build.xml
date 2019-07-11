@@ -18,12 +18,12 @@
 		</javac>
 	</target>
 	
-	<target name="war" depends="compile">
+	<target name="jar" depends="compile">
 		<war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent"/>
 			<lib dir="WebContent/WEB-INF/lib"/>
 			<classes dir="build/classes"/>
-		</war>
+		</jar>
 	</target>
 	
 	<target name="clean">
