@@ -13,6 +13,7 @@ withAnt(installation: 'ant_1.9.2', jdk: 'local-java-1.8.0-openjdk_64') {
 sh "ant init"
 sh "ant compile"
 sh "ant war"
+sh "chmod -R 775 /home/ec2-user/mydir/workspace/pipeline-3/dist/*.war"
 }
 }
 }
