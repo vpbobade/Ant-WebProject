@@ -20,7 +20,7 @@ sh "chmod -R 775 /home/ec2-user/mydir/workspace/pipeline-3/dist/*.war"
 stage ('Compile deploy'){
 steps {  
 sshagent (credentials: ['179ff7b9-dcbf-42ed-8078-d3ae0f333e9a']) {
-sh 'scp -o StrictHostKeyChecking=no *.war ec2-user@172.31.86.215:/opt/wildfly/standalone/deployments'
+sh 'scp -o StrictHostKeyChecking=no /home/ec2-user/mydir/workspace/pipeline-3/dist/AntExample.war ec2-user@172.31.86.215:/opt/wildfly/standalone/deployments'
 }
 }
 }
